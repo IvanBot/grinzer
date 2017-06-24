@@ -1,0 +1,318 @@
+@import "vendor/bootstrap/bootstrap";
+
+// @import "mixins/_fonts";
+
+// @import "fonts";
+
+@font-face {
+    font-family: 'MyFont Light';
+    src: url('/fonts/SFUIDisplay-Light.otf');
+}
+
+@font-face {
+    font-family: 'MyFont Thin';
+    src: url('/fonts/SFUIDisplay-Thin.otf');
+}
+
+
+
+.navbar {
+    background: #fff;
+    box-shadow: 0px 1px 16px 0px rgba(120,120,120,1);
+
+    a {
+        font: 1.3em 'MyFont Thin';
+        color: #696969;
+    }
+}
+
+.nav-item {
+    padding: 0px 25px;
+}
+
+.intro {
+    background-image: url("../img/intro.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    .container {
+        height: 100%;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        height: 100%;
+    }
+
+    &-item {
+        img {
+            padding-bottom: 50px;
+        }
+
+        h1 {
+            font: 3.5em 'MyFont Thin';
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font: 2em 'MyFont Thin';
+            padding: 20px;
+
+        }
+    }
+
+    &-switch {
+        position: absolute;
+        bottom: 50px;
+        cursor: pointer;
+        transition: bottom 0.3s;
+
+        &:hover {
+            bottom: 60px;
+        }
+    }
+}
+
+.desktop {
+    padding: 100px 0px;
+}
+
+.mobile {
+    padding: 50px 0px;
+}
+
+.about {
+
+    &-nav {
+        font: 1.75em 'MyFont Thin';
+        text-align: right;
+        margin-top: -1em;
+
+        .nav-item {
+            padding-right: 55px;
+        }
+
+        a {
+            color: #696969;
+            padding-left: 0em;
+            padding-right: 0em;
+            padding-top: 1.1em;
+        }
+
+        .active {
+            color: #5cbe00;
+            border-bottom: 1px solid #5cbe00;
+        }
+    }
+
+    &-content {
+        border-left: solid 1px #bfbfbf;
+        padding-left: 70px;
+
+        p {
+            font: 0.9em 'MyFont Light';
+            line-height: 2;
+        }
+    }
+
+    .desktop &-title {
+        font: 1.75em 'MyFont Thin';
+        padding-right: 0em;
+        padding-bottom: 1em;
+        color: #5cbe00;
+    }
+
+    .mobile &-title {
+        font: 2em 'MyFont Thin';
+        color: #696969;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .card {
+        border: none;
+        border-top: solid 1px #dfdfdf;
+    }
+
+    .active {
+        a { color: #5cbe00 !important; }
+        span {
+            color: #5cbe00 !important;
+            transform: rotate(45deg);
+        }
+
+
+    }
+
+    .card-header {
+        border: none;
+        border-radius: 0px;
+        background: #fff;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+        font-size: 1.3em;
+
+        a {
+
+            font-family: 'MyFont Thin';
+            color: #696969;
+            &:link {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .card-block {
+        font: 0.9em 'MyFont Light';
+        line-height: 2;
+    }
+
+    .card-block {
+        border-top: solid 1px #dfdfdf;
+    }
+}
+
+.info {
+    background:  #5cbe00;
+    padding: 100px 0px;
+
+    &-title {
+        font: 1.75em 'MyFont Thin';
+        color: #fff;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    &-img {
+        width: 100%;
+    }
+
+    &-content {
+        color: #fff;
+        font: 0.9em 'MyFont Light';
+        line-height: 2;
+
+        &-title {
+            font: 1.75em 'MyFont Thin';
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+    }
+
+
+
+    ul {
+        list-style: none;
+
+        li {
+            position: relative;
+        }
+    }
+
+    ul li:before {
+        content:  "-";
+        position: absolute;
+        left: -18px;
+    }
+}
+
+.banner {
+
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 0px;
+
+    &-item {
+
+        color: #fff;
+        h1 {
+            font: 3.5em 'MyFont Thin';
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font: 2em 'MyFont Thin';
+            padding: 20px;
+
+        }
+    }
+}
+
+.contact {
+    padding: 100px 0px;
+
+    &-title {
+        font: 1.75em 'MyFont Thin';
+        text-align: center;
+        color: #696969;
+        padding-bottom: 50px;
+    }
+
+    &-description {
+
+        padding-bottom: 50px;
+
+        &-title {
+            font: 1.75em 'MyFont Thin';
+            text-align: center;
+            color: #5cbe00;
+            padding-bottom: 30px;
+        }
+
+        &-main {
+            font: 0.9em 'MyFont Light';
+            line-height: 2;
+            color: #696969;
+            max-width: 720px;
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+    &-fill {
+        display: block;
+        width: 100%;
+        margin: 20px 0px;
+        border: none;
+        border-bottom: solid 1px #5cbe00;
+
+        &::placeholder {
+            color: #5cbe00;
+            font: 0.9em 'MyFont Light';
+
+        }
+    }
+
+    &-btn {
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        background: none;
+        border: 1px solid #5cbe00;
+        padding: 10px 70px;
+        color: #5cbe00;
+        font: 0.9em 'MyFont Light';
+        cursor: pointer;
+    }
+}
+
+.footer {
+
+    &-copyright {
+        font: 1em 'MyFont Light';
+        text-align: center;
+        color: #bababa;
+        padding-bottom: 50px;
+    }
+}

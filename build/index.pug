@@ -1,0 +1,146 @@
+doctype html
+
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Grinzer
+        link(rel="stylesheet" href="/css/common.css")
+        script(src="js/core.js" defer)
+    body
+        header
+            nav.navbar.fixed-top.navbar-toggleable-sm.white
+                .container
+                    a.navbar-brand(href="#")
+                        img(src="img/logo_mini.png")
+                    .collapse.navbar-collapse
+                        ul.navbar-nav.ml-auto
+                            li.nav-item
+                                a.nav-link.active(href="#intro") Home
+                            li.nav-item
+                                a.nav-link.active(href="#about") About
+                            li.nav-item
+                                a.nav-link.active(href="#info") Product info
+                            li.nav-item
+                                a.nav-link.active(href="#contact") Contact Us
+        section.intro#intro
+            .container
+                .intro-content
+                    .intro-item
+                        img(src="img/logo.png")
+                    .intro-item
+                        h1 Premium Top Quality Herb Grinders
+                        p Refine Your Grind with Grinzer
+                    .intro-switch#switch
+                        img(src="img/animation.png")
+
+        section.about#about
+            .container
+
+                .mobile.hidden-md-up
+                    .about-title About
+                    #accordion(role="tablist" aria-multiselectable="true")
+                        .card
+                            .card-header#headingOne(data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+                                a Sustainability
+                                span +
+                            #collapseOne.collapse.show(role="tabpanel" aria-labelledby="headingOne")
+                                .card-block Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+                        .card
+                            .card-header#headingTwo(data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo")
+                                a Refine Your Grind
+                                span +
+                            #collapseTwo.collapse(role="tabpanel" aria-labelledby="headingTwo")
+                                .card-block Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+                        .card
+                            .card-header#headingThree(data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree")
+                                a Benefits
+                                span +
+                            #collapseThree.collapse(role="tabpanel" aria-labelledby="headingThree")
+                                .card-block Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+                        .card
+                            .card-header#headingFour(data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour")
+                                a High Tech Design
+                                span +
+                            #collapseFour.collapse(role="tabpanel" aria-labelledby="headingFour")
+                                .card-block Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+
+
+
+                .desktop.hidden-sm-down
+                    .row
+                        .col-md-5.col-lg-4
+                            ul.nav.flex-column.about-nav
+                                li.nav-item
+                                    a.nav-link(data-toggle="tab" href="#sustainability") Sustainability
+                                li.nav-item
+                                    a.nav-link(data-toggle="tab" href="#refine") Refine Your Grind
+                                li.nav-item
+                                    a.nav-link(data-toggle="tab" href="#benefits") Benefits
+                                li.nav-item
+                                    a.nav-link(data-toggle="tab" href="#design") High Tech Design
+                        .col.about-content
+                            .about-title About
+                            .tab-content
+                                p.tab-pane.fade.show.active#sustainability Grinzer Grinders are all about making your life easier - essentially, we take your daily grind and turn it into a ritual. You'll be happy to know that most of our customers are geniuses with giant brains. Whether they became smart as a result of the Grinzer or if they were just drawn to it because it's so smart, that's up for grabs. The important thing to realize is that in the world of `smart` this and `smart` that, your Grinzer will never need a firmware update. If the world goes to hell in a hand basket, whether that's tomorrow or fifty years into the future, your Grinzer will retain the same awesome functionality it's known for. And that, my friends, is the very definition of sustainable.
+                                p.tab-pane.fade#refine Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                p.tab-pane.fade#benefits Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                p.tab-pane.fade#design Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        section.info#info
+            .container
+                .info-title Product info
+                .row
+                    .col-md-6.col-12
+                        img.info-img(src='img/product.png')
+                    .col-md-6.col-12.info-content
+                        h1.info-content-title Four-Piece Aluminum Grinder
+                        p With its classic design and high durability, we guarantee this is the only herb grinder you will ever need.
+                        p Effective, economical and ergonomic, Grinzer Grinders are great at home or on the go.
+                        ul
+                            li 2-1/2" in diameter X 1.75" in height: fits in the palm of your hand
+                            li Heavy-duty construction can withstand a beating
+                            li Powerful magnet closures don't come apart on their own
+                            li Sharpest grinding teeth for fine textured results
+                            li Lifetime warranty
+                            li Three chamber/four piece design
+                            li Aluminum mesh screen for effective pollen collection
+                            li Bonus pollen scraper included
+
+        section.banner
+            .container
+                .banner-item
+                    h1 High Tech Engineering - Best Grinder on the Market Today
+                    p Quality, Durability, Sustainability
+
+        section.contact#contact
+            .container
+                .contact-title Contact Us
+                .contact-description
+                    .contact-description-title Get in touch if you have any questions about the Grinzer Grinder
+                    .contact-description-main Email us through the link below, or fill out our handy contact form. We welcome all distribution and wholesale inquiries, and will address your questions whithin 24hrs of contact.
+                .contact-form
+                    form
+                        .row
+                            .col-6
+                                input.contact-fill(placeholder="Name" type="text")
+                            .col-6
+                                input.contact-fill(placeholder="Email" type="email")
+                        .row
+                            .col-12
+                                input.contact-fill(placeholder="Subject" type="text")
+                        .row
+                            .col-12
+                                input.contact-fill(placeholder="Message" type="text")
+                        button.contact-btn Send
+
+        section.footer
+            .container
+                .footer-copyright Copyright © All Right Reserved
+
+
+        async
