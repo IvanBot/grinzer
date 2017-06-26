@@ -25,4 +25,23 @@ $('#switch').click(function (event) {
   $('#about').scrollView();
 });
 
-// scroll for navigation
+
+$("#navbar .nav-link").each(function () {
+    $(this).click(function (event) {
+
+        var width = $( window ).width();
+
+        if (width > 991) {
+            // для desktop
+            event.preventDefault();
+            var link = $(this).attr('href')
+            $(link).scrollView();
+        }
+
+        else {
+            // для мобилок
+            $('#navbar').collapse('toggle')
+        }
+
+    });
+});

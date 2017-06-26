@@ -1,9 +1,5 @@
 @import "vendor/bootstrap/bootstrap";
 
-// @import "mixins/_fonts";
-
-// @import "fonts";
-
 @font-face {
     font-family: 'MyFont Light';
     src: url('/fonts/SFUIDisplay-Light.otf');
@@ -14,7 +10,36 @@
     src: url('/fonts/SFUIDisplay-Thin.otf');
 }
 
+@media (max-width: 991px) {
 
+    .big-font {
+        font: 3em 'MyFont Thin' !important;
+        text-align: center !important;
+    }
+
+    .intro-switch {
+        bottom: 100px !important;
+
+        &:hover {
+            bottom: 110px !important;
+        }
+    }
+
+    .mobile-container {
+        width: 100%;
+
+        .navbar-nav {
+            border-top: 2px solid #5cbe00;
+            margin-top: 10px;
+            padding: 10px 0px;
+            text-align: center;
+
+            a {
+                font-size: 1.75em;
+            }
+        }
+    }
+}
 
 .navbar {
     background: #fff;
@@ -24,10 +49,21 @@
         font: 1.3em 'MyFont Thin';
         color: #696969;
     }
+
+    &-toggler-icon {
+        width: 1.2em;
+        height: 1em;
+        background-image: url("/img/toggler.png");
+    }
 }
 
 .nav-item {
     padding: 0px 25px;
+}
+
+.big-font {
+    font: 3.5em 'MyFont Thin';
+    text-align: center;
 }
 
 .intro {
@@ -54,11 +90,6 @@
         img {
             padding-bottom: 50px;
         }
-
-        h1 {
-            font: 3.5em 'MyFont Thin';
-            text-align: center;
-        }
         p {
             text-align: center;
             font: 2em 'MyFont Thin';
@@ -77,14 +108,6 @@
             bottom: 60px;
         }
     }
-}
-
-.desktop {
-    padding: 100px 0px;
-}
-
-.mobile {
-    padding: 50px 0px;
 }
 
 .about {
@@ -121,18 +144,28 @@
         }
     }
 
-    .desktop &-title {
-        font: 1.75em 'MyFont Thin';
-        padding-right: 0em;
-        padding-bottom: 1em;
-        color: #5cbe00;
+    .desktop {
+
+        padding: 100px 0px;
+
+        .about-title {
+            font: 1.75em 'MyFont Thin';
+            padding-right: 0em;
+            padding-bottom: 1em;
+            color: #5cbe00;
+        }
     }
 
-    .mobile &-title {
-        font: 2em 'MyFont Thin';
-        color: #696969;
-        text-align: center;
-        padding-bottom: 50px;
+    .mobile {
+
+        padding: 100px 0px;
+
+        .about-title {
+            font: 2em 'MyFont Thin';
+            color: #696969;
+            text-align: center;
+            padding-bottom: 50px;
+        }
     }
 
     .card {
@@ -236,10 +269,6 @@
     &-item {
 
         color: #fff;
-        h1 {
-            font: 3.5em 'MyFont Thin';
-            text-align: center;
-        }
         p {
             text-align: center;
             font: 2em 'MyFont Thin';

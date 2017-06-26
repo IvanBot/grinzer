@@ -9,27 +9,30 @@ html(lang="en")
         script(src="js/core.js" defer)
     body
         header
-            nav.navbar.fixed-top.navbar-toggleable-sm.white
-                .container
-                    a.navbar-brand(href="#")
-                        img(src="img/logo_mini.png")
-                    .collapse.navbar-collapse
+            nav.navbar.navbar-toggleable-md.fixed-top.white
+                .mobile-container.container
+                    .mobile-header
+                        button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation")
+                            span.navbar-toggler-icon
+                        a.navbar-brand(href="#")
+                            img(src="img/logo_mini.png")
+                    .collapse.navbar-collapse#navbar
                         ul.navbar-nav.ml-auto
                             li.nav-item
                                 a.nav-link.active(href="#intro") Home
                             li.nav-item
-                                a.nav-link.active(href="#about") About
+                                a.nav-link(href="#about") About
                             li.nav-item
-                                a.nav-link.active(href="#info") Product info
+                                a.nav-link(href="#info") Product info
                             li.nav-item
-                                a.nav-link.active(href="#contact") Contact Us
+                                a.nav-link(href="#contact") Contact Us
         section.intro#intro
             .container
                 .intro-content
-                    .intro-item
+                    .intro-item.hidden-sm-down
                         img(src="img/logo.png")
                     .intro-item
-                        h1 Premium Top Quality Herb Grinders
+                        h1.big-font Premium Top Quality Herb Grinders
                         p Refine Your Grind with Grinzer
                     .intro-switch#switch
                         img(src="img/animation.png")
@@ -40,7 +43,7 @@ html(lang="en")
                 .mobile.hidden-md-up
                     .about-title About
                     #accordion(role="tablist" aria-multiselectable="true")
-                        .card
+                        .card.active
                             .card-header#headingOne(data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
                                 a Sustainability
                                 span +
@@ -76,7 +79,7 @@ html(lang="en")
                         .col-md-5.col-lg-4
                             ul.nav.flex-column.about-nav
                                 li.nav-item
-                                    a.nav-link(data-toggle="tab" href="#sustainability") Sustainability
+                                    a.nav-link.active(data-toggle="tab" href="#sustainability") Sustainability
                                 li.nav-item
                                     a.nav-link(data-toggle="tab" href="#refine") Refine Your Grind
                                 li.nav-item
@@ -114,7 +117,7 @@ html(lang="en")
         section.banner
             .container
                 .banner-item
-                    h1 High Tech Engineering - Best Grinder on the Market Today
+                    h1.big-font High Tech Engineering - Best Grinder on the Market Today
                     p Quality, Durability, Sustainability
 
         section.contact#contact

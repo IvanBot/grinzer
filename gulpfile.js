@@ -15,7 +15,7 @@ gulp.task('views', function () {
 
 gulp.task('sass', function() {
     return gulp.src("build/scss/*.scss")
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest("app/css"))
         .pipe(bs.reload({stream:true}));
 });
